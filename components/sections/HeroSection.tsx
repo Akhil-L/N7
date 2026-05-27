@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants  } from "framer-motion";
 import { Button } from "../ui/button";
 import {
   SiShell,
@@ -175,7 +175,7 @@ const DashboardMockup = () => {
 };
 
 export function HeroSection() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
 
     visible: {
@@ -188,7 +188,7 @@ export function HeroSection() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
 
     visible: {
@@ -197,7 +197,6 @@ export function HeroSection() {
 
       transition: {
         duration: 0.6,
-        ease: "easeOut",
       },
     },
   };
